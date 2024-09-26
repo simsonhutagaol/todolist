@@ -1,0 +1,129 @@
+
+.container {
+  position: relative;
+  max-width: 600px;
+  /* margin-top: 10px; */
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.task-input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.task-input:focus {
+  border-color: #ff7e5f;
+  outline: none;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.todo-item:hover {
+  background-color: #e9e9e9;
+  transform: translateY(-2px);
+}
+
+.delete-button {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff7e5f;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #feb47b;
+}
+
+/* Logout Button */
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff7e5f;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #feb47b;
+  transform: translateY(-1px);
+}
+
+.empty-state {
+  margin-top: 20px;
+}
+
+.empty-gif {
+  width: 50%;
+  height: auto;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .task-input {
+    font-size: 14px;
+  }
+
+  .todo-item {
+    font-size: 14px;
+  }
+
+  .logout-button {
+    font-size: 12px;
+  }
+
+  .delete-button {
+    font-size: 12px;
+  }
+}
